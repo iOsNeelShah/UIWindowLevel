@@ -19,6 +19,10 @@
 		3952E8981924B422000A18D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3952E8801924B422000A18D7 /* UIKit.framework */; };
 		3952E8A01924B422000A18D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3952E89E1924B422000A18D7 /* InfoPlist.strings */; };
 		3952E8A21924B422000A18D7 /* WindowLevelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3952E8A11924B422000A18D7 /* WindowLevelTests.m */; };
+		3952E8AF1924B48E000A18D7 /* CustomStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3952E8AD1924B48E000A18D7 /* CustomStatusBar.m */; };
+		3952E8B01924B48E000A18D7 /* statusbar_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 3952E8AE1924B48E000A18D7 /* statusbar_background.png */; };
+		3952E8B41924BD7A000A18D7 /* StatusBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3952E8B21924BD7A000A18D7 /* StatusBarViewController.m */; };
+		3952E8B51924BD7A000A18D7 /* StatusBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3952E8B31924BD7A000A18D7 /* StatusBarViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,12 @@
 		3952E89D1924B422000A18D7 /* WindowLevelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WindowLevelTests-Info.plist"; sourceTree = "<group>"; };
 		3952E89F1924B422000A18D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3952E8A11924B422000A18D7 /* WindowLevelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WindowLevelTests.m; sourceTree = "<group>"; };
+		3952E8AC1924B48E000A18D7 /* CustomStatusBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomStatusBar.h; sourceTree = "<group>"; };
+		3952E8AD1924B48E000A18D7 /* CustomStatusBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomStatusBar.m; sourceTree = "<group>"; };
+		3952E8AE1924B48E000A18D7 /* statusbar_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = statusbar_background.png; sourceTree = "<group>"; };
+		3952E8B11924BD7A000A18D7 /* StatusBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusBarViewController.h; sourceTree = "<group>"; };
+		3952E8B21924BD7A000A18D7 /* StatusBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusBarViewController.m; sourceTree = "<group>"; };
+		3952E8B31924BD7A000A18D7 /* StatusBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatusBarViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +117,12 @@
 		3952E8821924B422000A18D7 /* WindowLevel */ = {
 			isa = PBXGroup;
 			children = (
+				3952E8AB1924B48E000A18D7 /* CustomStatusBar */,
 				3952E88B1924B422000A18D7 /* AppDelegate.h */,
 				3952E88C1924B422000A18D7 /* AppDelegate.m */,
+				3952E8B11924BD7A000A18D7 /* StatusBarViewController.h */,
+				3952E8B21924BD7A000A18D7 /* StatusBarViewController.m */,
+				3952E8B31924BD7A000A18D7 /* StatusBarViewController.xib */,
 				3952E88E1924B422000A18D7 /* Images.xcassets */,
 				3952E8831924B422000A18D7 /* Supporting Files */,
 			);
@@ -142,6 +156,16 @@
 				3952E89E1924B422000A18D7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3952E8AB1924B48E000A18D7 /* CustomStatusBar */ = {
+			isa = PBXGroup;
+			children = (
+				3952E8AC1924B48E000A18D7 /* CustomStatusBar.h */,
+				3952E8AD1924B48E000A18D7 /* CustomStatusBar.m */,
+				3952E8AE1924B48E000A18D7 /* statusbar_background.png */,
+			);
+			path = CustomStatusBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +243,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3952E8B51924BD7A000A18D7 /* StatusBarViewController.xib in Resources */,
+				3952E8B01924B48E000A18D7 /* statusbar_background.png in Resources */,
 				3952E8871924B422000A18D7 /* InfoPlist.strings in Resources */,
 				3952E88F1924B422000A18D7 /* Images.xcassets in Resources */,
 			);
@@ -239,6 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3952E8B41924BD7A000A18D7 /* StatusBarViewController.m in Sources */,
+				3952E8AF1924B48E000A18D7 /* CustomStatusBar.m in Sources */,
 				3952E88D1924B422000A18D7 /* AppDelegate.m in Sources */,
 				3952E8891924B422000A18D7 /* main.m in Sources */,
 			);
@@ -360,6 +388,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WindowLevel/WindowLevel-Prefix.pch";
 				INFOPLIST_FILE = "WindowLevel/WindowLevel-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -373,6 +402,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WindowLevel/WindowLevel-Prefix.pch";
 				INFOPLIST_FILE = "WindowLevel/WindowLevel-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -437,6 +467,7 @@
 				3952E8A71924B422000A18D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3952E8A81924B422000A18D7 /* Build configuration list for PBXNativeTarget "WindowLevelTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +476,7 @@
 				3952E8AA1924B422000A18D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

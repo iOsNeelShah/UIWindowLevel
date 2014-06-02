@@ -3,18 +3,23 @@
 //  WindowLevel
 //
 //  Created by Neel Shah on 15/05/14.
-//  Copyright (c) 2014 com.solutionanalysts. All rights reserved.
-//
 
 #import "AppDelegate.h"
+#import "StatusBarViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+	
+	StatusBarViewController *statusBarViewController = [[StatusBarViewController alloc] initWithNibName:@"StatusBarViewController" bundle:nil];
+	
+	UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:statusBarViewController];
+	
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+	self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
     return YES;
 }
