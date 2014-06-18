@@ -10,7 +10,7 @@ How to use
 - Copy "CustomStatusBar" folder in you project.
 - #Import "CustomStatusBar.h"
 - example of usage
-
+  
   <code>
   _customStatusBar=[[CustomStatusBar alloc] initWithFrame:[UIApplication sharedApplication].statusBarFrame];
   [_customStatusBar showWithStatusMessage:@"This is multi window with it's level." viewController:self];
